@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { VegaLite } from "react-vega";
 import { Loading } from "../components/Loading";
-import "../assets/styles/App.css";
 
 export default function Trend() {
   const url =
@@ -54,8 +53,8 @@ export default function Trend() {
   }, []);
 
   const spec = {
-    width: 220,
-    height: 250,
+    width: 200,
+    height: 100,
     mark: {
       type: "line",
       tooltip: true,
@@ -74,8 +73,8 @@ export default function Trend() {
     return <Loading />;
   }
   return (
-    <div className="title_tendencia">
-      <h4>Tendencia en Colombia</h4>
+    <div>
+      <h6>Tendencia en Colombia</h6>
       <VegaLite spec={spec} data={data} />
     </div>
   );

@@ -68,7 +68,7 @@ export default function Sidebar() {
           Muertes: <span className="text-danger">{data.colBrief.deaths}</span>
         </li>
       </ul>
-      {/*  <Trend /> */}
+      <Trend />
     </div>
   );
 }

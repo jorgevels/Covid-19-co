@@ -9,10 +9,12 @@ const myIcon = new Icon({
   iconSize: [25, 25],
 });
 
-function Maps(props) {
+export default function Maps(props) {
   const state = {
-    lat: 3.009284,
-    lng: -73.334665,
+    /*  lat: 4.585425,
+    lng: -73.854894, */
+    lat: -1.515522,
+    lng: -72.148141,
     zoom: 5,
   };
   if (!props) {
@@ -60,5 +62,3 @@ function Maps(props) {
     </div>
   );
 }
-
-export default Maps;

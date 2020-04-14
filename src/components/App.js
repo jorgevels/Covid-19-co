@@ -1,22 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
-/* import { Router, Redirect } from "@reach/router"; */
-import { Router } from "@reach/router";
 import "../assets/styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavBar } from "../components/NavBar";
 import Header from "./Header";
-import { Loading } from "../components/Loading";
-
 import Sidebar from "./Sidebar";
 import Maps from "./Maps";
 import Trend from "./Trend";
-import { User } from "../pages/User";
-
-/* import User from "../pages/User"; */
-import Mundial from "../pages/Mundial";
-/* import Trend from "../pages/Trend"; */
-import NotFound from "../pages/NotFound";
+import { Loading } from "../components/Loading";
 
 export default function App() {
   const [data, setData] = useState("");
@@ -40,35 +30,29 @@ export default function App() {
     }
   }, []);
 
-  /* Inicializando componentes ...*/
   if (!data) {
+    /* Inicializando componentes ...*/
     return <Loading />;
-  } /* else { */
-  return (
-    <>
+    {
+    }
+  } else {
+    return (
       <div className="">
         <Header />
-        <div id="fix-for-navbar-fixed-top-spacing" style={{ height: "42px" }}>
+        <div id="fix-for-navbar-fixed-top-spacing" style={{ height: "38px" }}>
           &nbsp;
         </div>
-        <div className="container mt-3">
+        <div className="container mt-4">
           <div className="row">
-            {/* <div className="col-12 col-md-5">
+            <div className="col-12 col-md-5">
               <Sidebar />
-            </div> */}
-            <div className="map-container col-12 col-md-12">
-              {/* <Maps countriesinfo={data} /> */}
+            </div>
+            <div className="map-container col-12 col-md-7">
+              <Maps countriesinfo={data} />
             </div>
           </div>
         </div>
       </div>
-      <Router>
-        <NotFound default />
-        <Maps path="/" countriesinfo={data} />
-        <Mundial path="/mundial" />
-        <Trend path="/trend" />
-      </Router>
-      <NavBar />
-    </>
-  );
+    );
+  }
 }
