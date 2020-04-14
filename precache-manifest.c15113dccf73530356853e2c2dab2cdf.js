@@ -164,7 +164,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/firefox_app_60x60.png"
   },
   {
-    "revision": "c08d2a9704a48104db59",
+    "revision": "cd48efe49711d33b248b",
     "url": "assets/main.css"
   },
   {
@@ -204,7 +204,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/yandex-browser-manifest.json"
   },
   {
-    "revision": "c08d2a9704a48104db59",
+    "revision": "cd48efe49711d33b248b",
     "url": "bundle.js"
   },
   {
