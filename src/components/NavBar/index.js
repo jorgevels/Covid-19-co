@@ -15,7 +15,7 @@ const SIZE = "32px";
 export const NavBar = () => {
   return (
     <Nav>
-      <Link to="/">
+      <Link to="PruebaFinal/">
         <MdHome size={SIZE} />
       </Link>
       <Link to="/mundial">
