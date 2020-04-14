@@ -19,10 +19,10 @@ export default function Trend() {
     let confirmed = 0,
       deaths = 0,
       recovered = 0;
-    const firstMarch = new Date(3, 6, 2020);
+    const sixMarch = new Date(2, 6, 2020);
     keys.map((key) => {
       const dateItem = new Date(key);
-      if (dateItem >= firstMarch) {
+      if (dateItem >= sixMarch) {
         confirmed = firstItemTimeseries[key].confirmed - confirmed;
         formattedData.push({
           date: dateItem,
@@ -55,7 +55,7 @@ export default function Trend() {
 
   const spec = {
     width: 220,
-    height: 250,
+    height: 300,
     mark: {
       type: "line",
       tooltip: true,

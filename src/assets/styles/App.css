@@ -79,6 +79,7 @@ ul {
   list-style: none;
   position: absolute;
   top: 70px !important;
+  margin-right: 55px;
 
   right: 0;
   padding: 6px !important;
@@ -101,14 +102,39 @@ ul {
 }
 
 .afetacion {
+  /* display: block; */
   /* background-color: yellow; */
   height: 90vh;
+  text-align: center;
 }
 .afetacion h4 {
-  margin-top: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
-.afetacion h5 {
-  margin-top: 40px;
+
+.afetacion li {
+  font-size: 20px;
+  font-weight: 600;
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0px !important;
+}
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 5px auto 0 auto;
+}
+
+.text-danger,
+.text-success,
+.text-secondary {
+  font-size: 30px !important;
+}
+li span {
+  text-align: center;
 }
 /* 
 Support for browsers that DON'T support Flexbox uses 100% height on the map-container defined above.

@@ -43,31 +43,39 @@ function Sidebar() {
       <h4>Afectacion a nivel mundial</h4>
       <ul>
         <li>
-          Casos recuperados:{" "}
+          Total confirmados <br />
+          <span className="text-danger">{data.brief.confirmed}</span>
+        </li>
+        <li>
+          Total recuperados <br />
           <span className="text-success">{data.brief.recovered}</span>
         </li>
+
         <li>
-          Casos confirmados:{" "}
-          <span className="text-secondary">{data.brief.confirmed}</span>
-        </li>
-        <li>
-          Muertes: <span className="text-danger">{data.brief.deaths}</span>
+          Muertes <br />{" "}
+          <span className="text-secondary">{data.brief.deaths}</span>
         </li>
       </ul>
 
-      <h5>Afectacion en Colombia</h5>
+      <div className="linea"></div>
+
+      <h4>Afectacion en Colombia</h4>
 
       <ul>
         <li>
-          Casos recuperados:{" "}
-          <span className="text-success">{data.colBrief.recovered}</span>
+          Total confirmados
+          <br />
+          <span className="text-success">{data.colBrief.confirmed}</span>
         </li>
         <li>
-          Casos confirmados:{" "}
-          <span className="text-secondary">{data.colBrief.confirmed}</span>
+          Total recuperados
+          <br />
+          <span className="text-danger">{data.colBrief.recovered}</span>
         </li>
+
         <li>
-          Muertes: <span className="text-danger">{data.colBrief.deaths}</span>
+          Muertes <br />{" "}
+          <span className="text-secondary">{data.colBrief.deaths}</span>
         </li>
       </ul>
       {/*  <Trend /> */}
