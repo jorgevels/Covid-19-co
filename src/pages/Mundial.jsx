@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Trend from "./Trend";
 import { Loading } from "../components/Loading";
 
-export default function Sidebar() {
+function Sidebar() {
   const briefUrl =
     "https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/brief";
   const colBriefUrl =
@@ -39,8 +39,8 @@ export default function Sidebar() {
   }
 
   return (
-    <div>
-      <h6>Afectacion a nivel mundial</h6>
+    <div className="afetacion">
+      <h4>Afectacion a nivel mundial</h4>
       <ul>
         <li>
           Casos recuperados:{" "}
@@ -54,7 +54,9 @@ export default function Sidebar() {
           Muertes: <span className="text-danger">{data.brief.deaths}</span>
         </li>
       </ul>
-      <h6>Afectacion en Colombia</h6>
+
+      <h5>Afectacion en Colombia</h5>
+
       <ul>
         <li>
           Casos recuperados:{" "}
@@ -72,3 +74,5 @@ export default function Sidebar() {
     </div>
   );
 }
+
+export default Sidebar;

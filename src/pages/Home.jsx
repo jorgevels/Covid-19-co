@@ -11,9 +11,12 @@ const myIcon = new Icon({
 
 function Maps(props) {
   const state = {
-    lat: 3.009284,
-    lng: -73.334665,
-    zoom: 5,
+    /* lat: 5.725724,
+    lng: -74.345407,
+     zoom: 5.5, */
+    lat: -38.41,
+    lng: -63.61,
+    zoom: 4,
   };
   if (!props) {
     return null;
@@ -27,7 +30,29 @@ function Maps(props) {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
 
-        {props.countriesinfo.map((item) => {
+        {props.countriesinfo.map((item) => (
+          <Marker
+            key={item.key}
+            position={[item.location.lat, item.location.lng]}
+          >
+            <Popup>
+              <div>
+                <p>
+                  {" "}
+                  <strong>{item.key}</strong>{" "}
+                </p>
+                <p className="text-success"> recuperados: {item.recovered} </p>
+                <p className="text-secondary">
+                  {" "}
+                  confirmados: {item.confirmed}{" "}
+                </p>
+                <p className="text-danger"> muertes: {item.deaths} </p>
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+
+        {/* {props.countriesinfo.map((item) => {
           if (item.lat !== null && item.lng !== null) {
             return (
               <Marker
@@ -55,7 +80,7 @@ function Maps(props) {
           } else {
             return;
           }
-        })}
+        })} */}
       </Map>
     </div>
   );
