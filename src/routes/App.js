@@ -58,7 +58,7 @@ export default function App() {
         </div>
         <Router>
           <NotFound default />
-          <Maps path="/" countriesinfo={data} />
+          <Maps path="PruebaFinal/" countriesinfo={data} />
           <Mundial path="/mundial" />
           <Trend path="/trend" />
         </Router>
