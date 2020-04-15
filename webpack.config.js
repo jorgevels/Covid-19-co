@@ -52,20 +52,35 @@ module.exports = {
       //Array iconos de la aplicacion
       icons: [
         {
-          src: path.resolve("src/assets/icon-0.png"),
+          src: path.resolve("src/assets/favicon.png"),
           //Le pasamos todos los tamaños que requerimos
           sizes: [192, 512],
         },
       ],
     }),
-    new FaviconsWebpackPlugin("./src/assets/icon-0.png"),
+    new FaviconsWebpackPlugin("./src/assets/favicon.png"),
     new WorkboxWebpackPlugin.GenerateSW({
       runtimeCaching: [
         {
-          urlPattern: new RegExp("https://res.cloudinary.com"),
+          urlPattern: new RegExp(
+            "https://maps.arcgis.com/sharing/rest/content/items/3ddd6c4932d649d6996db442e920ceb9/data"
+          ),
           handler: "CacheFirst",
           options: {
             cacheName: "images",
+          },
+        },
+        {
+          // Cache para la API
+          urlPattern: new RegExp(
+            "https://api-covi-19.jorgevelasquez006.now.sh/API/covi19.json"
+          ),
+          // Le decimos que primero valla a la red antes de ir a la cache
+          // para tener los datos actulizados
+          handler: "NetworkFirst",
+          //Le pasamos el nombre de la cache api
+          options: {
+            cacheName: "api",
           },
         },
       ],
