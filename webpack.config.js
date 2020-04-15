@@ -14,16 +14,24 @@ module.exports = {
   // Haciendo referencia al archivo principal
   /* entry: "./src/index.js", */
   // En este output, es donde vamos a guardar los archivos resultantes cuando hagamos la configuracion
+  /* output: { */
+  // Filename nos pode un nombre al archivo compilado
+  /* filename: "app.bundle.js", */
+
+  //Simpre va a la raiz
+  /*  publicPath: "/", */
+
+  // La instancia resolve nos ayuda a detectar el directorio donde nos encontramos y el directorio donde vamos a guardar los archivos compilados
+  /* path: path.resolve(__dirname, "dist"), */
+  /* }, */
   output: {
-    // Filename nos pode un nombre al archivo compilado
     filename: "app.bundle.js",
-
-    //Simpre va a la raiz
     publicPath: "/",
-
-    // La instancia resolve nos ayuda a detectar el directorio donde nos encontramos y el directorio donde vamos a guardar los archivos compilados
-    /* path: path.resolve(__dirname, "dist"), */
   },
+  devServer: {
+    historyApiFallback: true,
+  },
+
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
     extensions: [".js", ".jsx"],
@@ -127,8 +135,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  devServer: {
-    historyApiFallback: true,
   },
 };
