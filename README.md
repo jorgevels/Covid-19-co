@@ -8,7 +8,7 @@ _Con esta PWA podras visualizar en el mapa de colombia las afetaciones en cada d
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** https://jorgevels.github.io/Merquemos/.
+Mira **Deployment** https://jorgevels.github.io/covid-19/.
 
 ### Pre-requisitos 📋
 
@@ -24,8 +24,6 @@ Lo puedes instalar en tu ordenador o cualquier dispositivo movil, solo necesitas
 Al ingresar el link en tu navegador en la barra de navegacion encontraras un un circulo con el signo de mas el cual al dar click desplegara un pequeño modal con la opcion de instalar la PWA.
 
 Al dar click sobre este boton se desplegara un pequeño modal, que te muestra un mensaje y te da la opcion de agregar a la pantalla principal o cancelar.
-
-_Si instalas la PWA este boton de color amarillo no lo volveras a ver._
 
 Si das click en el boton de cancelar la instalacion se cancelara y el boton de color amarillo seguira apareciendo en la pantalla principal
 
@@ -43,10 +41,9 @@ Al tener la PWA instalada en tu dispositivo, cada que el administrador realice u
 
 ## Construido con 🛠️
 
-_HTML5_
+_React_
 _JavaScript_
 _Css_
-_Sass_
 _Github_
 
 ## Versionado 📌
