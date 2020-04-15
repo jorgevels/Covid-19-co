@@ -21,7 +21,7 @@ Lo puedes instalar en tu ordenador o cualquier dispositivo movil, solo necesitas
 
 ### Instalación en tu ordenador🔧
 
-Al ingresar el link en tu navegador se desplegara la vista principal, esta en la parte superior tiene un boton de color amarillo el cual te permite con un solo click instalar la PWA.
+Al ingresar el link en tu navegador en la barra de navegacion encontraras un un circulo con el signo de mas el cual al dar click desplegara un pequeño modal con la opcion de instalar la PWA.
 
 Al dar click sobre este boton se desplegara un pequeño modal, que te muestra un mensaje y te da la opcion de agregar a la pantalla principal o cancelar.
 
