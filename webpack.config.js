@@ -1,11 +1,11 @@
 // Requerimos el modulo de path el Html plugin que isntalamos
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackPwaManifestPlugin = require("webpack-pwa-manifest");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
+const path = require("path");
 // Creamos un nuevo modulo que vamos a exportar con esta configuracion
 // Vamos a configurar cada unos de los elementos que necesitamos
 
@@ -19,10 +19,10 @@ module.exports = {
     filename: "bundle.js",
 
     //Simpre va a la raiz
-    publicPath: "/",
+    /* publicPath: "/", */
 
     // La instancia resolve nos ayuda a detectar el directorio donde nos encontramos y el directorio donde vamos a guardar los archivos compilados
-    /* path: path.resolve(__dirname, "dist"), */
+    path: path.resolve(__dirname, "dist"),
   },
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
