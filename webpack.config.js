@@ -16,7 +16,7 @@ module.exports = {
   // En este output, es donde vamos a guardar los archivos resultantes cuando hagamos la configuracion
   output: {
     // Filename nos pode un nombre al archivo compilado
-    filename: "bundle.js",
+    filename: "app.bundle.js",
 
     //Simpre va a la raiz
     publicPath: "/",
