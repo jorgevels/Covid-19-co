@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import { Loading } from "../components/Loading";
 
 import Maps from "../components/Maps";
-import Trend from "../components/Trend";
+import Trend from "../pages/Trend";
 import Mundial from "../pages/Mundial";
 import NotFound from "../pages/NotFound";
 

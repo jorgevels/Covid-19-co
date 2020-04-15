@@ -4,7 +4,7 @@ import { VegaLite } from "react-vega";
 import { Loading } from "../components/Loading";
 import "../assets/styles/App.css";
 
-function Trend() {
+export default function Trend() {
   const url =
     "https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries?iso2=CO";
 
@@ -19,10 +19,10 @@ function Trend() {
     let confirmed = 0,
       deaths = 0,
       recovered = 0;
-    const firstMarch = new Date(3, 6, 2020);
+    const sixMarch = new Date(2, 6, 2020);
     keys.map((key) => {
       const dateItem = new Date(key);
-      if (dateItem >= firstMarch) {
+      if (dateItem >= sixMarch) {
         confirmed = firstItemTimeseries[key].confirmed - confirmed;
         formattedData.push({
           date: dateItem,
@@ -54,8 +54,8 @@ function Trend() {
   }, []);
 
   const spec = {
-    width: 200,
-    height: 200,
+    width: 250,
+    height: 300,
     mark: {
       type: "line",
       tooltip: true,
@@ -73,12 +73,12 @@ function Trend() {
     /* return <div>Buscando datos de Tendencia...</div>; */
     return <Loading />;
   }
+
   return (
     <div className="title_tendencia">
-      <h6>Tendencia en Colombia</h6>
+      <h4>Tendencia en Colombia</h4>
+      <h6>Curba de tendencia del COVID-19 con datos reales</h6>
       <VegaLite spec={spec} data={data} />
     </div>
   );
 }
-
-export default Trend;
