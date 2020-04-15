@@ -1,7 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "949996b075dc85bcb9ce742ad4c86590",
+    "revision": "b05ef8053780c5fd451b4b33996f5e88",
     "url": "/./index.html"
+  },
+  {
+    "revision": "5c2e6ec5ded55a8e5dcb",
+    "url": "/app.bundle.js"
   },
   {
     "revision": "e11d06447c89b990cf07fea85d4ff666",
@@ -202,10 +206,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4ba7e0641e7d56eda53480dfa142bf66",
     "url": "/assets/yandex-browser-manifest.json"
-  },
-  {
-    "revision": "5c2e6ec5ded55a8e5dcb",
-    "url": "/bundle.js"
   },
   {
     "url": "/icon_192x192.556ab6e9f96a22f1caf4e9bbf9cede75.png"
