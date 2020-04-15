@@ -31,4 +31,5 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/https:\/\/res.cloudinary.com/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
+workbox.routing.registerRoute(/https:\/\/maps.arcgis.com\/sharing\/rest\/content\/items\/3ddd6c4932d649d6996db442e920ceb9\/data/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
+workbox.routing.registerRoute(/https:\/\/api-covi-19.jorgevelasquez006.now.sh\/API\/covi19.json/, new workbox.strategies.NetworkFirst({ "cacheName":"api", plugins: [] }), 'GET');
