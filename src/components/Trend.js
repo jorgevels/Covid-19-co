@@ -73,9 +73,11 @@ export default function Trend() {
     /* return <div>Buscando datos de Tendencia...</div>; */
     return <Loading />;
   }
+
   return (
     <div className="title_tendencia">
       <h4>Tendencia en Colombia</h4>
+      <h6>Curba de tendencia del COVID-19 con datos reales</h6>
       <VegaLite spec={spec} data={data} />
     </div>
   );

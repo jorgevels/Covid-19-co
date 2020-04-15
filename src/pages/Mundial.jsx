@@ -44,16 +44,15 @@ function Sidebar() {
       <ul>
         <li>
           Total confirmados <br />
-          <span className="text-danger">{data.brief.confirmed}</span>
+          <span className="danger">{data.brief.confirmed}</span>
         </li>
         <li>
           Total recuperados <br />
-          <span className="text-success">{data.brief.recovered}</span>
+          <span className="success">{data.brief.recovered}</span>
         </li>
 
         <li>
-          Muertes <br />{" "}
-          <span className="text-secondary">{data.brief.deaths}</span>
+          Muertes <br /> <span className="secondary">{data.brief.deaths}</span>
         </li>
       </ul>
 
@@ -65,17 +64,17 @@ function Sidebar() {
         <li>
           Total confirmados
           <br />
-          <span className="text-success">{data.colBrief.confirmed}</span>
+          <span className="success ">{data.colBrief.confirmed}</span>
         </li>
         <li>
           Total recuperados
           <br />
-          <span className="text-danger">{data.colBrief.recovered}</span>
+          <span className="danger">{data.colBrief.recovered}</span>
         </li>
 
         <li>
           Muertes <br />{" "}
-          <span className="text-secondary">{data.colBrief.deaths}</span>
+          <span className="secondary">{data.colBrief.deaths}</span>
         </li>
       </ul>
       {/*  <Trend /> */}
