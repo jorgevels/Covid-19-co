@@ -12,17 +12,17 @@ const path = require("path");
 module.exports = {
   // Iniciando por la entrada del proyecto
   // Haciendo referencia al archivo principal
-  entry: "./src/index.js",
+  /* entry: "./src/index.js", */
   // En este output, es donde vamos a guardar los archivos resultantes cuando hagamos la configuracion
   output: {
     // Filename nos pode un nombre al archivo compilado
     filename: "bundle.js",
 
     //Simpre va a la raiz
-    /* publicPath: "/", */
+    publicPath: "/",
 
     // La instancia resolve nos ayuda a detectar el directorio donde nos encontramos y el directorio donde vamos a guardar los archivos compilados
-    path: path.resolve(__dirname, "dist"),
+    /* path: path.resolve(__dirname, "dist"), */
   },
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
