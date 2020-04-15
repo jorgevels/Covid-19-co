@@ -26,7 +26,7 @@ module.exports = {
   /* }, */
   output: {
     filename: "app.bundle.js",
-    /*  publicPath: "/", */
+    publicPath: "/",
   },
   devServer: {
     historyApiFallback: true,
@@ -67,6 +67,7 @@ module.exports = {
       ],
     }),
     new FaviconsWebpackPlugin("./src/assets/favicon.png"),
+
     new WorkboxWebpackPlugin.GenerateSW({
       runtimeCaching: [
         {
