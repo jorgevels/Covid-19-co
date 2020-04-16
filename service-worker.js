@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.ade1d9c14e5f4e339422c1ee785311a6.js"
+  "/precache-manifest.f562055eef132a3bcaf7fed7c240238e.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -31,5 +31,5 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/https:\/\/maps.arcgis.com\/sharing\/rest\/content\/items\/3ddd6c4932d649d6996db442e920ceb9\/data/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
-workbox.routing.registerRoute(/https:\/\/api-covi-19.jorgevelasquez006.now.sh\/API\/covi19.json/, new workbox.strategies.NetworkFirst({ "cacheName":"api", plugins: [] }), 'GET');
+workbox.routing.registerRoute(/https:\/\/maps.arcgis.com\/sharing\/rest\/content\/items\/3ddd6c4932d649d6996db442e920ceb9\/data|res.cloudinary.com/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
+workbox.routing.registerRoute(/https:\/\/api-covi-19.jorgevelasquez006.now.sh\/API\/covi19.json|https:\/\/wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai\/jhu-edu\/brief|https:\/\/wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai\/jhu-edu\/latest?iso2=CO/, new workbox.strategies.NetworkFirst({ "cacheName":"api", plugins: [] }), 'GET');
