@@ -7,6 +7,8 @@ import {
   MdPersonOutline,
   MdLanguage,
   MdTimeline,
+  MdThumbUp,
+  MdPublic,
 } from "react-icons/md";
 
 // constante con el tamaño de los iconos
@@ -19,10 +21,13 @@ export const NavBar = () => {
         <MdHome size={SIZE} />
       </Link>
       <Link to="/mundial">
-        <MdLanguage size={SIZE} />
+        <MdPublic size={SIZE} />
       </Link>
       <Link to="/trend">
         <MdTimeline size={SIZE} />
+      </Link>
+      <Link to="/info">
+        <MdThumbUp size={SIZE} />
       </Link>
     </Nav>
   );
