@@ -13,8 +13,8 @@ module.exports = {
   // Iniciando por la entrada del proyecto
   // Haciendo referencia al archivo principal
   entry: {
-    'index':path.resolve(__dirname, 'src/index.js')
-  }
+    index: path.resolve(__dirname, "src/index.js"),
+  },
   /* entry: "./src/index.js", */
   // En este output, es donde vamos a guardar los archivos resultantes cuando hagamos la configuracion
   /* output: { */
