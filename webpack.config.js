@@ -19,7 +19,7 @@ module.exports = {
   /* filename: "app.bundle.js", */
 
   //Simpre va a la raiz
-  publicPath: "",
+  /* publicPath: "/", */
 
   // La instancia resolve nos ayuda a detectar el directorio donde nos encontramos y el directorio donde vamos a guardar los archivos compilados
   /* path: path.resolve(__dirname, "dist"), */
