@@ -12,7 +12,10 @@ const path = require("path");
 module.exports = {
   // Iniciando por la entrada del proyecto
   // Haciendo referencia al archivo principal
-  entry: "./src/index.js",
+  entry: {
+    'index':path.resolve(__dirname, 'src/index.js')
+  }
+  /* entry: "./src/index.js", */
   // En este output, es donde vamos a guardar los archivos resultantes cuando hagamos la configuracion
   /* output: { */
   // Filename nos pode un nombre al archivo compilado
