@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./index.html"
   },
   {
-    "revision": "20571bdea5e4c86dd02b",
+    "revision": "8e3d7f7663ecff195efe",
     "url": "app.bundle.js"
   },
   {
@@ -168,7 +168,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/firefox_app_60x60.png"
   },
   {
-    "revision": "20571bdea5e4c86dd02b",
+    "revision": "8e3d7f7663ecff195efe",
     "url": "assets/main.css"
   },
   {
