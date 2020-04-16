@@ -58,7 +58,7 @@ export default function App() {
         </div>
         <Router>
           <NotFound default />
-          <Maps path="covi-19/" countriesinfo={data} />
+          <Maps path="covid-19-co/" countriesinfo={data} />
           <Mundial path="/mundial" />
           <Trend path="/trend" />
         </Router>
