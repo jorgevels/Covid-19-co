@@ -8,7 +8,7 @@ _Con esta PWA podras visualizar en el mapa de colombia las afetaciones en cada d
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** https://jorgevels.github.io/covid-19/.
+Mira **Deployment** https://jorgevels.github.io/covid-19-co/.
 
 ### Pre-requisitos 📋
 
@@ -52,7 +52,7 @@ _Version 0.1_
 
 ## Autores ✒️
 
-- **Jorge Velasquez** - \_ \_ - [jorgevels](https://github.com/villanuevand)
+- **Jorge Velasquez** - \_ \_ - [jorgevels](https://github.com/
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
 

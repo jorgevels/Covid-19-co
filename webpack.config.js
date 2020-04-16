@@ -26,11 +26,11 @@ module.exports = {
   /* }, */
   output: {
     filename: "app.bundle.js",
-    /* publicPath: "/", */
+    publicPath: "/",
   },
-  devServer: {
+  /* devServer: {
     historyApiFallback: true,
-  },
+  }, */
 
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
@@ -51,10 +51,10 @@ module.exports = {
     }),
     new WebpackPwaManifestPlugin({
       //Le pasamos el objeto de configuracion
-      name: "Coronavirus ",
-      shortname: "Covid-19 col",
+      name: "COVID-19-CO ",
+      shortname: "COVID-19",
       description:
-        "Mapa de Colombia con las afectaciones del COVID-19 con datos realales locales y mundiales ",
+        "Mapa de Colombia con las afectaciones del COVID-19 con datos realales, locales y mundiales ",
       background_color: "#fff",
       theme_color: "#b1a",
       //Array iconos de la aplicacion
@@ -72,7 +72,7 @@ module.exports = {
       runtimeCaching: [
         {
           urlPattern: new RegExp(
-            "https://maps.arcgis.com/sharing/rest/content/items/3ddd6c4932d649d6996db442e920ceb9/data"
+            "https://maps.arcgis.com/sharing/rest/content/items/3ddd6c4932d649d6996db442e920ceb9/data|res.cloudinary.com"
           ),
           handler: "CacheFirst",
           options: {
@@ -82,7 +82,7 @@ module.exports = {
         {
           // Cache para la API
           urlPattern: new RegExp(
-            "https://api-covi-19.jorgevelasquez006.now.sh/API/covi19.json"
+            "https://api-covi-19.jorgevelasquez006.now.sh/API/covi19.json|https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/brief|https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/latest?iso2=CO"
           ),
           // Le decimos que primero valla a la red antes de ir a la cache
           // para tener los datos actulizados
