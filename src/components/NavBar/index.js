@@ -26,7 +26,7 @@ export const NavBar = () => {
       <Link to="/trend">
         <MdTimeline size={SIZE} />
       </Link>
-      <Link to="/info">
+      <Link to="/inf">
         <MdThumbUp size={SIZE} />
       </Link>
     </Nav>
