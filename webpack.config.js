@@ -54,8 +54,8 @@ module.exports = {
     }),
     new WebpackPwaManifestPlugin({
       //Le pasamos el objeto de configuracion
-      name: "COVID-19-CO ",
-      shortname: "COVID-19",
+      name: "CovidApp ",
+      shortname: "Covid-19",
       description:
         "Mapa de Colombia con las afectaciones del COVID-19 con datos realales, locales y mundiales ",
       background_color: "#fff",
@@ -63,13 +63,13 @@ module.exports = {
       //Array iconos de la aplicacion
       icons: [
         {
-          src: path.resolve("src/assets/favicon.png"),
+          src: path.resolve("src/assets/faviconp.png"),
           //Le pasamos todos los tamaños que requerimos
           sizes: [192, 512],
         },
       ],
     }),
-    new FaviconsWebpackPlugin("./src/assets/favicon.png"),
+    new FaviconsWebpackPlugin("./src/assets/faviconp.png"),
 
     new WorkboxWebpackPlugin.GenerateSW({
       runtimeCaching: [

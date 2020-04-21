@@ -6,7 +6,7 @@ import { Icon } from "leaflet";
 const myIcon = new Icon({
   iconUrl:
     "https://res.cloudinary.com/imagesfull/image/upload/v1586370527/like/icon-0_akbmne.png",
-  iconSize: [25, 25],
+  iconSize: [18, 18],
 });
 
 function Maps(props) {

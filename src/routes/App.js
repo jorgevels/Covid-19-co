@@ -10,7 +10,7 @@ import { Loading } from "../components/Loading";
 import Maps from "../components/Maps";
 import Trend from "../pages/Trend";
 import Mundial from "../pages/Mundial";
-import Inf from "../pages/Inf";
+import Recomendacion from "../pages/Recomendacion";
 import NotFound from "../pages/NotFound";
 
 export default function App() {
@@ -59,10 +59,11 @@ export default function App() {
         </div>
         <Router>
           <NotFound default />
-          <Maps path="covid-19-co/" countriesinfo={data} />
+          <Maps path="/" countriesinfo={data} />
           <Mundial path="/mundial" />
           <Trend path="/trend" />
-          <Inf path="/inf" />
+          <Recomendacion path="/inf" />
+          {/* <Inf path="/inf" /> */}
         </Router>
         <NavBar />
       </>

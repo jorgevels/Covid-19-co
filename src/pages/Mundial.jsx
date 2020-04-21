@@ -2,6 +2,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Trend from "./Trend";
 import { Loading } from "../components/Loading";
+import {
+  FaUserCheck,
+  Fabible,
+  FaBatteryEmpty,
+  FaMale,
+  FaUser,
+  FaCross,
+} from "react-icons/fa";
+const SIZE = "32px";
 
 function Sidebar() {
   const briefUrl =
@@ -33,51 +42,56 @@ function Sidebar() {
   if (!data) {
     // Cargando los datos de la afetacion mundial
     return <Loading />;
-    /* {
-       <div>Buscando datos...</div>; 
-    } */
   }
 
   return (
-    <div className="afetacion">
-      <h4>Afectacion a nivel mundial</h4>
+    <div
+      className="container-fluid-nav text-center .bg-light text-black .bg-secondary"
+      style={{
+        height: "90vh",
+      }}
+    >
+      <div className="mar" style={{ marginTop: "0px" }}>
+        <h4>Afectación a nivel mundial</h4>
+      </div>
       <ul>
+        <FaUserCheck className="logo-confirmed" style={{ color: "#74121D" }} />
         <li>
           Total confirmados <br />
-          <span className="danger">{data.brief.confirmed}</span>
+          <span className="danger"> {data.brief.confirmed}</span>
         </li>
+        <FaUser className="logo-recovered" style={{ color: "#297045" }} />
         <li>
           Total recuperados <br />
           <span className="success">{data.brief.recovered}</span>
         </li>
-
+        <FaCross className="logo-deaths" style={{ color: "#36494E" }} />
         <li>
           Muertes <br /> <span className="secondary">{data.brief.deaths}</span>
         </li>
       </ul>
-
       <div className="linea"></div>
-
-      <h4>Afectacion en Colombia</h4>
-
+      <h4>Afectación en Colombia</h4>
       <ul>
+        <FaUserCheck className="logo-confirmed" style={{ color: "#74121D" }} />
         <li>
           Total confirmados
           <br />
-          <span className="success ">{data.colBrief.confirmed}</span>
+          <span className="danger ">{data.colBrief.confirmed}</span>
         </li>
+
+        <FaUser className="logo-recovered" style={{ color: "#297045" }} />
         <li>
           Total recuperados
           <br />
-          <span className="danger">{data.colBrief.recovered}</span>
+          <span className="success">{data.colBrief.recovered}</span>
         </li>
-
-        <li>
+        <FaCross className="logo-deaths" style={{ color: "#36494E" }} />
+        <li className="final">
           Muertes <br />{" "}
           <span className="secondary">{data.colBrief.deaths}</span>
         </li>
       </ul>
-      {/*  <Trend /> */}
     </div>
   );
 }

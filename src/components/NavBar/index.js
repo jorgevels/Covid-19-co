@@ -17,7 +17,7 @@ const SIZE = "32px";
 export const NavBar = () => {
   return (
     <Nav>
-      <Link to="covid-19-co/">
+      <Link to="/">
         <MdHome size={SIZE} />
       </Link>
       <Link to="/mundial">
