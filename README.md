@@ -8,7 +8,7 @@ _Con esta PWA podras visualizar en el mapa de colombia las afetaciones en cada d
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** https://jorgevels.github.io/covid-19-co/.
+Mira **Deployment** https://covid-19-col.now.sh/.
 
 ### Pre-requisitos 📋
 
