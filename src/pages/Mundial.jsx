@@ -2,14 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Trend from "./Trend";
 import { Loading } from "../components/Loading";
-import {
-  FaUserCheck,
-  Fabible,
-  FaBatteryEmpty,
-  FaMale,
-  FaUser,
-  FaCross,
-} from "react-icons/fa";
+import { FaUserCheck, FaUser, FaCross } from "react-icons/fa";
 const SIZE = "32px";
 
 function Sidebar() {

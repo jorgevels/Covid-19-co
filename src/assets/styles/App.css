@@ -187,6 +187,23 @@ li span {
 .logo-deaths {
   font-size: 32px;
 }
+.vega-embed.has-actions {
+  padding-right: 38px;
+  text-align: center;
+}
+.marks {
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-left: 35vw;
+}
+
+.vega-embed.has-actions {
+  padding-right: 0px !important;
+  top: 12px !important;
+  text-align: center !important;
+  justify-content: center;
+}
 /* 
 Support for browsers that DON'T support Flexbox uses 100% height on the map-container defined above.
 Map will at least render, for the small amount of browsers that DON'T support flexbox. Users will just have to scroll abit ¯\_(ツ)_/¯
@@ -227,6 +244,9 @@ Map will at least render, for the small amount of browsers that DON'T support fl
     color: #36494e;
     margin-bottom: 150px !important;
   }
+  .marks {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -250,6 +270,9 @@ Map will at least render, for the small amount of browsers that DON'T support fl
     color: #36494e;
     margin-bottom: 150px !important;
   }
+  .marks {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -272,6 +295,9 @@ Map will at least render, for the small amount of browsers that DON'T support fl
     font-size: 25px !important;
     color: #36494e;
     margin-bottom: 150px !important;
+  }
+  .marks {
+    margin-left: 0;
   }
 }
 
@@ -304,5 +330,8 @@ Map will at least render, for the small amount of browsers that DON'T support fl
   }
   .logo-deaths {
     font-size: 20px;
+  }
+  .marks {
+    margin-left: 0;
   }
 }

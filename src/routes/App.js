@@ -11,7 +11,7 @@ import Maps from "../components/Maps";
 import Trend from "../pages/Trend";
 import Mundial from "../pages/Mundial";
 import Recomendacion from "../pages/Recomendacion";
-import NotFound from "../pages/NotFound";
+import NotFoundx from "../pages/NotFoundx";
 
 export default function App() {
   const [data, setData] = useState("");
@@ -19,7 +19,8 @@ export default function App() {
   // Haciendo el llamado de los datos del personal afectado en Colombia
   const getData = async () => {
     const response = await fetch(
-      "https://api-covi-19.jorgevelasquez006.now.sh/API/covi19.json"
+      /*  "https://api-covi-19.jorgevelasquez006.now.sh/API/covi19.json" */
+      "https://api-covi-19.vercel.app/API/covi19.json"
     );
 
     const data = await response.json();
@@ -58,7 +59,7 @@ export default function App() {
           </div>
         </div>
         <Router>
-          <NotFound default />
+          <NotFoundx default />
           <Maps path="/" countriesinfo={data} />
           <Mundial path="/mundial" />
           <Trend path="/trend" />

@@ -25,6 +25,10 @@
       "dest": "/$1.ico"
     },
     {
+      "src": "(.*).svg",
+      "dest": "/$1.svg"
+    },
+    {
       "src": "(.*).json",
       "dest": "/$1.json"
     },
