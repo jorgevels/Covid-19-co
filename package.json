@@ -33,7 +33,7 @@
     "react-vega": "^7.3.0",
     "regenerator-runtime": "^0.13.5",
     "styled-components": "^4.4.0",
-    "vega": "^5.10.0",
+    "vega": "^5.23.0",
     "vega-lite": "^4.8.1"
   },
   "devDependencies": {
