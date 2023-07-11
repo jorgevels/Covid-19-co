@@ -29,7 +29,7 @@
     "react-icons": "3.7.0",
     "react-leaflet": "^2.6.3",
     "react-mdl": "^2.1.0",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^5.0.1",
     "react-vega": "^7.3.0",
     "regenerator-runtime": "^0.13.5",
     "styled-components": "^4.4.0",
@@ -57,15 +57,15 @@
     "html-webpack-plugin": "^3.2.0",
     "install": "^0.13.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
-    "npm": "^6.14.4",
+    "node-sass": "^9.0.0",
+    "npm": "^9.8.0",
     "sass-loader": "^8.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.9.0",
-    "webpack-pwa-manifest": "4.0.0",
+    "webpack-pwa-manifest": "4.3.0",
     "wepack-cli": "0.0.1-security",
     "workbox-webpack-plugin": "4.3.1",
-    "favicons-webpack-plugin": "^1.0.2"
+    "favicons-webpack-plugin": "^6.0.0"
   }
 }
